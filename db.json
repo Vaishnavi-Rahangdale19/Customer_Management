@@ -1,0 +1,20 @@
+{
+  "customers": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane@example.com"
+    },
+    {
+      "id": "defa",
+      "customerName": "vaishnavi rahangdale",
+      "mobileNumber": "7869550761",
+      "address": "Changorabhata, Raipur"
+    }
+  ]
+}

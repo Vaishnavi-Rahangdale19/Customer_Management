@@ -1,0 +1,133 @@
+General table styling
+.table-container {
+    margin: 20px auto;
+    width: 50%;
+    max-width: 800px; /* Max width to prevent the table from going out of bounds */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Responsive table container */
+  .table-responsive {
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+  
+  /* Table styling */
+  table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    margin-left: 25%;
+  }
+  
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  /* Input field styling */
+  .input-row input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Add a subtle hover effect on the rows */
+  .table-row:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button styling */
+  .add-row-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-row-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    th, td {
+      font-size: 14px;
+      padding: 10px;
+    }
+    
+    .add-row-btn {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    th, td {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+    
+    table {
+      font-size: 12px;
+    }
+  }
+  /* Button Styling */  
+.edit-btn, .delete-btn, .update-btn, .add-btn {  
+    margin: 0 5px;  
+    padding: 5px 10px;  
+    border: none;  
+    border-radius: 4px;  
+    cursor: pointer;  
+}  
+
+.edit-btn {  
+    background-color: #ffc107; /* Yellow */  
+    color: white;  
+}  
+
+.delete-btn {  
+    background-color: #dc3545; /* Red */  
+    color: white;  
+}  
+
+.update-btn {  
+    background-color: #28a745; /* Green */  
+    color: white;  
+}  
+
+.add-btn {  
+    background-color: #007bff; /* Blue */  
+    color: white;  
+}  
+
+.edit-btn:hover, .delete-btn:hover, .update-btn:hover, .add-btn:hover {  
+    opacity: 0.8; /* Slightly transparent on hover */  
+}  
+
+/* Updated Input Field Styling */  
+.input-row input {  
+    width: calc(100% - 60px); /* Adjust to fit the button */  
+}

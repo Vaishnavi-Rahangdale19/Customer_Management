@@ -1,0 +1,70 @@
+/* AddWorker1.css */
+
+.add-customer-container {
+  display: flex;
+  justify-content: center;
+  max-width: 800px; /* Increased width to accommodate form */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-column-container {
+  display: flex;
+  width: 100%;
+}
+
+.vertical-bar {
+  height: 100%;
+  width: 4px;
+  background-color: #1890ff;
+  animation: grow-bar 1s ease-in-out;
+}
+
+@keyframes grow-bar {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+/* Form content styles */
+.form-content {
+  padding-left: 20px;
+  flex: 1;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Apply grid layout for two-column form */
+.ant-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Spacing between columns */
+}
+
+.ant-form-item {
+  display: block;
+}
+
+/* Label and input adjustments */
+.ant-form-item-label {
+  text-align: left;
+}
+
+.ant-input,
+.ant-select-selector,
+.ant-input-textarea {
+  width: 100%;
+}
+
+.ant-btn {
+  grid-column: span 2; /* Make the submit button span across both columns */
+}
